@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEEFB"
+    android:padding="16dp">
+
+    <!-- TextView para a pergunta do quiz -->
+
+    <!-- RadioGroup para as opções de resposta -->
+
+
+    <!-- RadioButton para a opção 1 -->
+
+    <!-- RadioButton para a opção 2 -->
+
+    <!-- RadioButton para a opção 3 -->
+
+    <!-- RadioButton para a opção 4 -->
+
+
+    <!-- Botão para submeter a resposta -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- View de fundo com bordas arredondadas -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@id/questionTextView"
+            android:layout_alignBottom="@id/questionTextView"
+            android:background="@drawable/rounded_white_background" />
+
+
+        <!-- Seu TextView -->
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/ariblk"
+            android:gravity="center_vertical"
+            android:minHeight="178dp"
+            android:padding="8dp"
+            android:text="Pergunta do Quiz"
+            android:textAlignment="center"
+            android:textColor="#35373A"
+            android:textSize="20sp" /> <!-- Centralizar dentro do RelativeLayout -->
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/answerOptionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        tools:layout_editor_absoluteX="16dp">
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+
+
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Opção 1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Opção 2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1RadioButton" />
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+
+            android:text="Opção 3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option2RadioButton" />
+
+        <RadioButton
+            android:id="@+id/option4RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Opção 4"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option3RadioButton" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#6e9dfe"
+        android:text="Confirmar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerOptionsRadioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<!-- dialog_add_flashcard_with_collection.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Frente do Flashcard" />
+
+    <EditText
+        android:id="@+id/editTextBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Verso do Flashcard" />
+
+    <Spinner
+        android:id="@+id/spinnerCollections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

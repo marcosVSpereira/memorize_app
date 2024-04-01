@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Memorize</string>
+    <string name="login">Entrar</string>
+    <string name="register">Cadastre-se</string>
+    <string name="todo">TODO</string>
+    <string name="memorize">Memorize</string>
+    <string name="memo">Memorize</string>
+    <string name="Slogan">Não deixe o seu conhecimento \\nvagar no espaço do esquecimento!!</string>
+    <string name="Frase">Não deixe o seu conhecimento\nvagar no espaço do esquecimento!!</string>
+    <string name="loginfrase">O esquecimento é como a gravidade,\numa força natural que pode ser\nsuperada para atingir grandes feito.</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="entrar">Entrar</string>
+    <string name="n_o_tem_uma_conta_cadastre_se_aqui">Não tem uma conta? Cadastre-se aqui!</string>
+    <string name="esqueceu_a_senha_clique_aqui">Esqueceu a senha? Clique aqui!</string>
+    <string name="adquira_conhecimento_como_o_motor_que_impulsionar_seus_objetivos">Adquira conhecimento como o motor \nque impulsionará seus objetivos.</string>
+    <string name="ranking">Ranking</string>
+    <string name="_2_horas">2 horas</string>
+    <string name="_7_dias">7 dias</string>
+    <string name="_6_min">6 min</string>
+    <string name="f_cil">Fácil</string>
+    <string name="m_dio">Médio</string>
+    <string name="mostrar_resposta">Mostrar Resposta</string>
+    <string name="texto_do_verso">Texto do Verso</string>
+    <string name="texto_da_frente">Texto da Frente</string>
+    <string name="dif_cil">Difícil</string>
+
+    <string name="speak_now">Fale agora</string>
+    <string name="speech_not_supported">Reconhecimento de voz não suportado neste dispositivo</string>
+
+</resources>

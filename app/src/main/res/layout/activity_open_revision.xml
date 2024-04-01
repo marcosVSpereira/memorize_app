@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7fb"
+    android:padding="16dp">
+
+    <!-- TextView para mostrar a pergunta (frente do flashcard) -->
+
+    <!-- EditText para a resposta do usuário -->
+
+    <!-- Botão para submeter a resposta -->
+
+    <!-- TextView para mostrar a resposta correta -->
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Pergunta"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:hint="Digite sua resposta aqui"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuestion" />
+
+    <ImageButton
+        android:id="@+id/buttonMic"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_alignBottom="@id/editTextAnswer"
+        android:layout_marginTop="184dp"
+        android:layout_toEndOf="@id/editTextAnswer"
+        android:background="@null"
+        android:contentDescription="@string/speak_now"
+        android:scaleType="centerInside"
+        android:src="@drawable/mic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="440dp"
+        android:backgroundTint="#6e9dfe"
+        android:text="Enviar"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnswer" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnswer"> <!-- Adiciona espaçamento interno ao ScrollView -->
+
+
+        <TextView
+            android:id="@+id/textViewCorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="Resposta correta"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="221dp" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

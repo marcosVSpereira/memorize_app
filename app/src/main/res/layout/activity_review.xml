@@ -1,0 +1,184 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7fb"
+    android:padding="16dp">
+
+    <!-- Botão para mostrar a resposta -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFlashcard"
+        android:layout_width="320dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="38dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonShowAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="543dp">
+
+            <TextView
+                android:id="@+id/textViewFront"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Não há Flashcards!"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textViewBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Texto do Verso"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonShowAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Virar Cartão"
+        android:backgroundTint="#4a60dd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="Médio"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/buttonHard"
+        app:layout_constraintStart_toEndOf="@id/buttonEasy"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowAnswer" />
+
+    <Button
+        android:id="@+id/buttonEasy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="Fácil"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/buttonMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowAnswer" />
+
+    <Button
+        android:id="@+id/buttonHard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="Difícil"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonMedium"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowAnswer" />
+
+    <!-- TextViews para mostrar o intervalo até a próxima revisão -->
+    <TextView
+        android:id="@+id/textViewNextReviewEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_6_min"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/buttonEasy"
+        app:layout_constraintEnd_toEndOf="@id/buttonEasy"
+        app:layout_constraintStart_toStartOf="@id/buttonEasy" />
+
+    <TextView
+        android:id="@+id/textViewNextReviewMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2_horas"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/buttonMedium"
+        app:layout_constraintEnd_toEndOf="@id/buttonMedium"
+        app:layout_constraintStart_toStartOf="@id/buttonMedium" />
+
+    <TextView
+        android:id="@+id/textViewNextReviewHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_7_dias"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/buttonHard"
+        app:layout_constraintEnd_toEndOf="@id/buttonHard"
+        app:layout_constraintStart_toStartOf="@id/buttonHard" />
+
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_width="200dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/ariblk"
+        android:text="Errei"
+        android:textAlignment="textStart"
+        android:textColor="#ff3c1d"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Acertei"
+        android:textAlignment="textEnd"
+
+        android:textColor="#02cd02"
+        android:visibility="invisible"
+        android:fontFamily="@font/ariblk"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:text="Quase lá"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:textColor="#fdb702"
+        android:visibility="invisible"
+        android:fontFamily="@font/ariblk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFlashcard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

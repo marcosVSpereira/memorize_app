@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/> <!-- Defina a cor do fundo da caixa de diálogo -->
+    <corners android:radius="16dp"/> <!-- Ajuste o raio para controlar o quão arredondado você quer as bordas -->
+</shape>

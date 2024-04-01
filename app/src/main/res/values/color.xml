@@ -1,0 +1,6 @@
+<resources>
+    <color name="green">#02cd02</color>
+    <color name="red">#ff3c1d</color>
+    <color name="orange">#fdb702</color>
+    <color name="originalColor">#FFFFFF</color> <!-- Substitua com a cor original do seu card -->
+</resources>

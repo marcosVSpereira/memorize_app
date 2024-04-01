@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner para escolher a coleção -->
+    <Spinner
+        android:id="@+id/spinnerCollections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Campo para a pergunta do quiz -->
+    <EditText
+        android:id="@+id/editTextQuizQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a pergunta"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para a resposta correta -->
+    <EditText
+        android:id="@+id/editTextCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resposta correta"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para uma resposta incorreta -->
+    <EditText
+        android:id="@+id/editTextIncorrectAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resposta incorreta 1"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para uma resposta incorreta -->
+    <EditText
+        android:id="@+id/editTextIncorrectAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Resposta incorreta 1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para uma resposta incorreta -->
+    <EditText
+        android:id="@+id/editTextIncorrectAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Resposta incorreta 1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Adicione mais campos para respostas incorretas conforme necessário -->
+
+    <!-- Botão para adicionar o quiz -->
+    <Button
+        android:id="@+id/buttonAddQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Quiz"
+        android:backgroundTint="#4a60dd"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
